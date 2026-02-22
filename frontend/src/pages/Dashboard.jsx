@@ -10,7 +10,7 @@ function Dashboard() {
 
   const fetchCustomers = async () => {
     const res = await axios.get(`${API}/api/customers`, {
-      headers: { Authorization: ` ${token}` },
+      headers: { Authorization: `${token}` },
     });
     setCustomers(res.data);
   };
@@ -82,7 +82,7 @@ function Dashboard() {
         <br>
         </br>
       <button className="bg-red-700 text-white p-2 " onClick={()=>{localStorage.removeItem("token");
-        navigate("/login");}}>Logout</button>
+       window.location.href ="/login";}}>Logout</button>
         
     </div>
   );

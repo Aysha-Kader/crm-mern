@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     const res = await axios.post(`${API}/api/auth/login`, form);
     localStorage.setItem("token", res.data.token);
-    navigate("/");
+   window.location.href="/";
   };
 
   return (
