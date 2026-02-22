@@ -82,7 +82,7 @@ function Dashboard() {
         <br>
         </br>
       <button className="bg-red-700 text-white p-2 " onClick={()=>{localStorage.removeItem("token");
-        window.location.href="/login";}}>Logout</button>
+        navigate("/login");}}>Logout</button>
         
     </div>
   );
